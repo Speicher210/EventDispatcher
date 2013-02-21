@@ -1,0 +1,26 @@
+{
+    "name":"wingu/event-dispatcher",
+    "description":"Wingu OctopusCore EventDispatcher",
+    "version":"1.0.0",
+    "type":"library",
+    "keywords":[
+        "events"
+    ],
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Dragos",
+            "email":"dragos.protung@speicher210.com",
+            "role":"Developer"
+        }
+    ],
+    "require":{
+        "php":">=5.4"
+    },
+    "autoload":{
+        "psr-0":{
+            "Wingu\\OctopusCore\\EventDispatcher\\":"src/",
+    		"Wingu\\OctopusCore\\EventDispatcher\\Tests":"tests/"
+    	}
+    }
+}
