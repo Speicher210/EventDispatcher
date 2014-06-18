@@ -56,7 +56,7 @@ class WildcardMatcher extends RegexMatcher {
     }
 
     /**
-     * Transform the wiledcard pattern into a regular expression pattern.
+     * Transform the wildcard pattern into a regular expression pattern.
      *
      * @param string $pattern The wildcard pattern.
      * @return string

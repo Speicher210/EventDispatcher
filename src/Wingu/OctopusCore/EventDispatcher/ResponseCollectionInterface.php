@@ -3,7 +3,7 @@
 namespace Wingu\OctopusCore\EventDispatcher;
 
 /**
- * A colection with the results for each event subscriber.
+ * A collection with the results for each event subscriber.
  */
 interface ResponseCollectionInterface extends \Iterator, \ArrayAccess, \Countable {
 

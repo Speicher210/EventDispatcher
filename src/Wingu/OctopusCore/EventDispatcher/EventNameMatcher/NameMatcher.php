@@ -6,7 +6,7 @@ use Wingu\OctopusCore\EventDispatcher\EventInterface;
 use Wingu\OctopusCore\EventDispatcher\Exceptions\InvalidArgumentException;
 
 /**
- * Event name matcher of events with a specifiec name.
+ * Event name matcher of events with a specific name.
  */
 class NameMatcher implements EventNameMatcherInterface {
 

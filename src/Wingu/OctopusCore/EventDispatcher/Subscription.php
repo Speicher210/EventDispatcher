@@ -13,7 +13,7 @@ class Subscription implements SubscriptionInterface {
     /**
      * The event name matcher.
      *
-     * @var \Wingu\OctopusCore\EventDispatcher\EventNameMatcherInterface
+     * @var \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface
      */
     protected $eventNameMatcher;
 
@@ -34,7 +34,7 @@ class Subscription implements SubscriptionInterface {
     /**
      * Constructor.
      *
-     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher.
+     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher.
      * @param Callable $callback The callback.
      * @param integer $priority The priority.
      */
@@ -47,7 +47,7 @@ class Subscription implements SubscriptionInterface {
     /**
      * Set the event name matcher.
      *
-     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher to set.
+     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher to set.
      * @return \Wingu\OctopusCore\EventDispatcher\SubscriptionInterface
      */
     public function setEventNameMatcher(EventNameMatcherInterface $eventNameMatcher) {
@@ -58,7 +58,7 @@ class Subscription implements SubscriptionInterface {
     /**
      * Get the event name to subscribe.
      *
-     * @return \Wingu\OctopusCore\EventDispatcher\EventNameMatcher;
+     * @return \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface
      */
     public function getEventNameMatcher() {
         return $this->eventNameMatcher;

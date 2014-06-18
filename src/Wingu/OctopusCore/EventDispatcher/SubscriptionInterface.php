@@ -12,7 +12,7 @@ interface SubscriptionInterface {
     /**
      * Set the event name matcher.
      *
-     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher to set.
+     * @param \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface $eventNameMatcher The event name matcher to set.
      * @return \Wingu\OctopusCore\EventDispatcher\SubscriptionInterface
      */
     public function setEventNameMatcher(EventNameMatcherInterface $eventNameMatcher);
@@ -20,7 +20,7 @@ interface SubscriptionInterface {
     /**
      * Get the event name to subscribe.
      *
-     * @return \Wingu\OctopusCore\EventDispatcher\EventNameMatcher;
+     * @return \Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface
      */
     public function getEventNameMatcher();
 

@@ -2,7 +2,6 @@
 
 namespace Wingu\OctopusCore\EventDispatcher;
 
-use Wingu\OctopusCore\EventDispatcher\EventInterface;
 use Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface;
 
 /**

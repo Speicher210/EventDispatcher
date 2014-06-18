@@ -21,7 +21,7 @@ class EventNameMatcherFactory {
      * @throws \Wingu\OctopusCore\EventDispatcher\Exceptions\InvalidArgumentException If the pattern is not valid.
      */
     public static function getEventNameMatcher($pattern) {
-        // If the pattern is allready an EventNameMatcher
+        // If the pattern is already an EventNameMatcher
         if ($pattern instanceof EventNameMatcherInterface) {
             return $pattern;
         }

@@ -101,8 +101,8 @@ class Event extends \ArrayIterator implements EventInterface {
     /**
      * Get the value of an argument of the event.
      *
-     * @param sting $name The name of the argument.
-     * @param mixd $default The default value if parameter is not found.
+     * @param string $name The name of the argument.
+     * @param mixed $default The default value if parameter is not found.
      * @return mixed
      */
     public function getArgument($name, $default = null) {

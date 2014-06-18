@@ -1,7 +1,7 @@
 {
     "name":"wingu/event-dispatcher",
     "description":"Wingu OctopusCore EventDispatcher",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "type":"library",
     "keywords":[
         "events"
@@ -16,6 +16,9 @@
     ],
     "require":{
         "php":">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.1.*"
     },
     "autoload":{
         "psr-0":{

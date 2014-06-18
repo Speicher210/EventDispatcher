@@ -2,7 +2,6 @@
 
 namespace Wingu\OctopusCore\EventDispatcher;
 
-use Wingu\OctopusCore\EventDispatcher\EventInterface;
 use Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherInterface;
 use Wingu\OctopusCore\EventDispatcher\EventNameMatcher\EventNameMatcherFactory;
 
@@ -142,6 +141,7 @@ class EventDispatcher implements EventDispatcherInterface {
      */
     public function unsubscribe(EventNameMatcherInterface $eventNameMatcher, Callable $callback) {
         foreach ($this->subscriptions as $subscription) {
+            /* @var $subscription \Wingu\OctopusCore\EventDispatcher\SubscriptionInterface */
             if ($eventNameMatcher->getHash() === $subscription->getEventNameMatcher()->getHash() && $callback === $subscription->getCallback()) {
                 $this->subscriptions->detach($subscription);
             }
@@ -195,6 +195,7 @@ class EventDispatcher implements EventDispatcherInterface {
         $subscriptions = new \SplPriorityQueue();
 
         foreach ($this->subscriptions as $subscription) {
+            /* @var $subscription \Wingu\OctopusCore\EventDispatcher\SubscriptionInterface */
             if ($subscription->getEventNameMatcher()->matchByName($eventName) === true) {
                 $subscriptions->insert($subscription, $subscription->getPriority());
             }
@@ -220,6 +221,7 @@ class EventDispatcher implements EventDispatcherInterface {
      */
     public function hasEventSubscriptions($eventName) {
         foreach ($this->subscriptions as $subscription) {
+            /* @var $subscription \Wingu\OctopusCore\EventDispatcher\SubscriptionInterface */
             if ($subscription->getEventNameMatcher()->matchByName($eventName) === true) {
                 return true;
             }

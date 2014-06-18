@@ -5,7 +5,7 @@ namespace Wingu\OctopusCore\EventDispatcher\EventNameMatcher;
 use Wingu\OctopusCore\EventDispatcher\EventInterface;
 
 /**
- * Event name matcher that mathces all events.
+ * Event name matcher that matches all events.
  */
 class AllNamesMatcher implements EventNameMatcherInterface {
 
